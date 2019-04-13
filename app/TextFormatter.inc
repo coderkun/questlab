@@ -65,9 +65,6 @@
             // Add link targets
             $string = $this->tLinks($string);
 
-            // Handle custom formatting
-            $string = $this->tCustom($string);
-
             // Handle Seminarymedia
             $string = $this->tSeminarymedia($string);
 
@@ -132,39 +129,6 @@
             catch(\Exception $e) {
                 return $string;
             }
-        }
-
-
-        /**
-         * Handle custom formatting syntax.
-         * 
-         * @Deprecated
-         * @param   string  $string String to format
-         * @return  string          Formatted string
-         */
-        private function tCustom($string)
-        {
-            // Important text
-            $string = str_replace('[strong]', '<strong>', $string);
-            $string = str_replace('[/strong]', '</strong>', $string);
-
-            // Create tables
-            $string = preg_replace('/(\[table\])\s+/u', '$1', $string);
-            $string = preg_replace('/\s*(\[tr\])\s*/u', '$1', $string);
-            $string = preg_replace('%\s+(\[/table\])%u', '$1', $string);
-            $string = preg_replace('%\s*(\[/tr\])\s*%u', '$1', $string);
-            $string = str_replace('[table]', '</p><table>', $string);
-            $string = str_replace('[/table]', '</table><p>', $string);
-            $string = str_replace('[tr]', '<tr>', $string);
-            $string = str_replace('[/tr]', '</tr>', $string);
-            $string = str_replace('[th]', '<th>', $string);
-            $string = str_replace('[/th]', '</th>', $string);
-            $string = str_replace('[td]', '<td>', $string);
-            $string = str_replace('[/td]', '</td>', $string);
-
-
-            // Return new string
-            return $string;
         }
 
 
