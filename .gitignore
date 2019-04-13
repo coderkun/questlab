@@ -1,0 +1,9 @@
+/doc/
+/logs/
+/media/
+/tmp/
+/uploads/
+/seminarymedia/
+/seminaryuploads/
+/www/analytics/tmp/
+/app/lib/phpqrcode/cache/
