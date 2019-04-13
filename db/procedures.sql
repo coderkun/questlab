@@ -1,6 +1,6 @@
 DROP PROCEDURE IF EXISTS update_cache_characters_quest;
 DELIMITER $$
-CREATE DEFINER = 'z'@'%' PROCEDURE update_cache_characters_quest(
+CREATE DEFINER = 'questlab'@'localhost' PROCEDURE update_cache_characters_quest(
 	IN QUESTID INT(11)
 )
 BEGIN
@@ -27,7 +27,7 @@ DELIMITER ;
 
 DROP PROCEDURE IF EXISTS update_cache_characters_charactergroup;
 DELIMITER $$
-CREATE DEFINER = 'z'@'%' PROCEDURE update_cache_characters_charactergroup(
+CREATE DEFINER = 'questlab'@'localhost' PROCEDURE update_cache_characters_charactergroup(
 	IN CHARACTERGROUPID INT(11)
 )
 BEGIN
@@ -54,7 +54,7 @@ DELIMITER ;
 
 DROP PROCEDURE IF EXISTS update_cache_characters_xplevels;
 DELIMITER $$
-CREATE DEFINER = 'z'@'%' PROCEDURE update_cache_characters_xplevels(
+CREATE DEFINER = 'questlab'@'localhost' PROCEDURE update_cache_characters_xplevels(
     IN SEMINARYID INT(11),
     IN XPS_LOWER INT(11),
     IN XPS_UPPER INT(11)
@@ -92,7 +92,7 @@ DELIMITER ;
 
 DROP PROCEDURE IF EXISTS update_cache_characters;
 DELIMITER $$
-CREATE DEFINER = 'z'@'%' PROCEDURE update_cache_characters(
+CREATE DEFINER = 'questlab'@'localhost' PROCEDURE update_cache_characters(
 	IN CHARACTERID INT(11)
 )
 BEGIN
@@ -146,7 +146,7 @@ DELIMITER ;
 
 DROP PROCEDURE IF EXISTS update_cache_charactergroups_charactergroupsquest;
 DELIMITER $$
-CREATE DEFINER = 'z'@'%' PROCEDURE update_cache_charactergroups_charactergroupsquest(
+CREATE DEFINER = 'questlab'@'localhost' PROCEDURE update_cache_charactergroups_charactergroupsquest(
 	IN CHARACTERGROUPSQUESTID INT(11)
 )
 BEGIN
@@ -173,7 +173,7 @@ DELIMITER ;
 
 DROP PROCEDURE IF EXISTS update_cache_charactergroups;
 DELIMITER $$
-CREATE DEFINER = 'z'@'%' PROCEDURE update_cache_charactergroups(
+CREATE DEFINER = 'questlab'@'localhost' PROCEDURE update_cache_charactergroups(
 	IN CHARACTERGROUPID INT(11)
 )
 BEGIN

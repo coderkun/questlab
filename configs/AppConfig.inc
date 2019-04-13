@@ -450,10 +450,10 @@
          * @var array
          */
         public static $database = array(
-            'user'      => 'z',
+            'user'      => 'questlab',
             'host'      => 'localhost',
-            'password'  => 'legendofZ',
-            'db'        => 'z'
+            'password'  => 'questlab',
+            'db'        => 'questlab'
         );
 
 

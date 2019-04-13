@@ -604,15 +604,6 @@ LOCK TABLES `questtypes_submit_characters_comments` WRITE;
 UNLOCK TABLES;
 
 --
--- Dumping data for table `questtypes_submit_mimetypes`
---
-
-LOCK TABLES `questtypes_submit_mimetypes` WRITE;
-/*!40000 ALTER TABLE `questtypes_submit_mimetypes` DISABLE KEYS */;
-/*!40000 ALTER TABLE `questtypes_submit_mimetypes` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Dumping data for table `questtypes_textinput`
 --
 
